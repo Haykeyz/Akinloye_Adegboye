@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    /* background-color: blue; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #7F56D9;
+}
+
+.main {
+    /* border: 2px solid black; */
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.sub_main{
+    text-align: center;
+    padding: 10px;
+}
+
+.input_field{
+    text-align: center;
+    /* margin: 10px; */
+}
+
+input::placeholder {
+    font-size: 10px;
+}
+
+.input_field button {
+    background-color: #7F56D9;
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.input_field p {
+    font-size: 10px;
+    display: flex;
+    justify-content: start;
+    padding: 5px;
+}
+
+.hero h5 {
+    text-align: left;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.right_card h4 { 
+    color: #7F56D9;
+    font-style: normal;
+    font-weight: 100;
+    fill-opacity: initial;
+    
+}
+
+.ul{
+    padding-inline-start: 0px;
+    display: inline;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+.tag{
+
+      
+    border-radius: 20px;
+    padding: 2px 3px ;
+    font-size: 14px;
+    text-align: left;
+    
+    
+}
+
+.tag.designTag{
+    color: purple;
+    background-color: rgb(231, 193, 193);
+}
+
+.tag.researchTag{
+    color: rgb(106, 9, 252);
+    background-color: rgb(161, 161, 196);
+    
+}
+
+.tag.presentationTag{
+    color: rgb(244, 56, 72);
+    background-color: rgb(241, 218, 218);
+}
+.left_card h4{
+    color: #7F56D9;
+    font-style: normal;
+    font-weight: 100;
+    fill-opacity: initial;
+}
+
+.left_card .upper_card_details{
+    text-align: right;
+   display: list-item;
+    float: right;
+    display: flex;
+}
+.Big_card {
+    display: grid;
+    grid-template-areas: calc(.upper_card);
+}
+.right_card{
+        grid-area: auto;
+}
+.upper_card{
+    grid-area: col 2;
+}
